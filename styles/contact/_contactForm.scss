@@ -1,0 +1,52 @@
+@import "./contactVariables";
+
+#contact-us{
+
+    .container{
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+
+        &__enquiries{
+            text-align: center;
+            color: $fourthColor;
+            font-weight: map-get($font-weights, 'regular');
+            margin-bottom: 3rem;
+            letter-spacing: 0.063rem;
+        }
+
+        &__form{
+            width: 75%;
+            margin: 0rem auto;
+            padding: 2rem;
+            border-radius: 0.313rem;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.148);
+
+            @include responsive(phone){
+               width: 100%;
+            }
+        }
+
+        &__form-title{
+            margin-bottom: 2rem;  
+        }
+
+        &__contact-button{
+            margin-top: 1rem;
+            background: $thirdColor;
+            letter-spacing: 0.098rem;
+            width: 100%;
+            color: $primaryColor;
+            text-transform: uppercase;
+            padding: 0.688rem 3rem;
+            font-weight: map-get($font-weights, 'medium');
+            border: 0.156rem solid $thirdColor;
+            border-radius: 0.015rem;
+            transition: ease-in-out 0.3s;
+            
+            &:hover{
+                background: $primaryColor;
+                color: $fourthColor;
+            }
+        }    
+    }
+}

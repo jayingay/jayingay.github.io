@@ -1,0 +1,58 @@
+@import "./variables";
+@import "./global";
+@import "./mixin";
+
+nav{
+    background-color: $thirdColor;
+    width: 100%;
+    min-height: 3.75rem;
+
+    .container{
+        padding: 0;
+        
+        &__search-icon{
+            color: $secondaryColor;
+        }
+
+        &__input-search{
+            background: transparent;
+            color: $secondaryColor;
+            width: 20vw;
+            border: 0;
+            font-size: 1.1rem;
+            
+            &::placeholder{
+                color: $secondaryColor
+            }
+            
+            @include responsive(tablet-port){
+                width: 40vw;
+            }
+            
+            @include responsive(phone){
+                width: 50vw;
+            }
+        }
+
+        &__strong{
+            font-weight: map-get($font-weights, 'large');
+            font-family: $titleFont;
+            letter-spacing: .1rem;
+            font-size: $heading4; 
+            color: $secondaryColor;
+            
+            @include responsive(tablet-port){
+                display: none;
+            }
+            
+            @include responsive(phone){
+                display: none;
+            }   
+        }
+
+        &__arrow-right-icon{
+            color: $secondaryColor;
+            font: 1rem; 
+        }
+    }
+}

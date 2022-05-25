@@ -1,0 +1,39 @@
+@import "./variables";
+@import "./global";
+@import "./mixin";
+
+#marketing-plan{
+
+    .container{
+        padding:0;
+        
+        &__heading-2{
+            font-family: $titleFont;
+            color:$fourthColor;
+            font-size: $heading2;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            width: 100%;   
+        }
+    
+        &__icon-box{
+            text-align: center;
+            align-items: center;
+            padding: 15px 45px; 
+        }
+    
+        &__icon-image{
+            width: 13.50rem;    
+        }
+    
+        &__heading-3{
+            font-family: $titleFont;
+            font-size: $heading3;
+        }
+    
+        &__block-image{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

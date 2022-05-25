@@ -1,0 +1,49 @@
+//SERVICES
+@import "./services/mediaQueries";
+@import "./services/variables";
+@import "./services/global";
+@import "./services/mixin";
+@import "./services/navbar";
+@import "./services/header";
+@import "./services/banner";
+@import "./services/marketingPlan";
+@import "./services/imgLayout";
+@import "./services/sellingProcess";
+@import "./services/buyingProcess";
+@import "./services/about";
+@import "./services/strategy";
+@import "./services/images";
+@import "./services/contact";
+@import "./services/footer";
+
+
+//HOMEPAGE
+@import "./homepage/homeMediaQueries";
+@import "./homepage/homeVariables";
+@import "./homepage/homeGlobal";
+@import "./homepage/homeMixin";
+@import "./homepage/homeBanner";
+@import "./homepage/homeContent";
+@import "./homepage/homeTestimonials";
+@import "./homepage/homeLayout";
+@import "./homepage/homeFooter";
+
+
+//SEARCH-HOME
+@import "./search-home/searchMediaQueries";
+@import "./search-home/searchVariables";
+@import "./search-home/searchGlobal";
+@import "./search-home/searchMixin";
+@import "./search-home/searchBanner";
+@import "./search-home/searchNavbar";
+@import "./search-home/searchContent";
+
+
+//CONTACT
+@import "./contact/contactVariables";
+@import "./contact/contactForm";
+
+
+//LOGIN
+@import "./login/loginVariables";
+@import "./login/loginForm";

@@ -1,0 +1,19 @@
+
+@mixin responsive($breakPoints){
+    
+    @if($breakPoints == phone){ 
+        @media (max-width: 767px){@content};
+    }
+
+    @if($breakPoints == tablet-port){  
+        @media (max-width: 992px){@content};
+    }
+
+    @if($breakPoints == tablet-land){  
+        @media (max-width: 1200px){@content};
+    }
+
+    @if($breakPoints == desktop){  
+        @media (min-width: 1300px){@content};
+    }
+}

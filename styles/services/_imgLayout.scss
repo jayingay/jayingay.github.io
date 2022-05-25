@@ -1,0 +1,70 @@
+@import "./variables";
+@import "./global";
+@import "./mixin";
+
+#img-layout{
+
+    .container{
+
+        &__div-heading{
+            @include flexboxCenter();
+            background-color: $fourthColor;
+        }
+    
+        &__title-heading-2{
+            font-family: $titleFont;
+            width: 200px;
+            color: $primaryColor;
+        }
+    
+        &__div-image{
+            padding: 0;
+            margin-bottom: .50rem; 
+        }
+    
+        &__row-image{
+            width: 100%; 
+        }
+    
+        &__div-content{
+            padding: 5rem 3rem;
+           
+            @include responsive(tablet-land){
+                padding: 3.5rem 3rem;
+                line-height: 2rem;     
+            }
+
+            @include responsive(tablet-port){
+                padding: 1rem 3rem; 
+                line-height: 2rem;     
+            }
+
+            @include responsive(phone){
+                padding: 1rem 3rem;
+                margin-left: 5rem;
+                  
+            }
+        }
+    
+        &__heading-2{
+            font-family: $titleFont;
+            font-size: $heading2;
+
+            @include responsive(tablet-port){
+                font-size: $heading3;
+                 
+            }
+        }
+    
+        &__div-list-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        &__content-item{
+            line-height: 2rem;       
+        }
+    }
+}

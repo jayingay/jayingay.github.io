@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./global";
+@import "./mixin";
+
+.navbar{
+
+    &__navbar-brand{
+        max-width: 25%;
+        height: auto; 
+    }
+
+    &__nav-logo{
+        max-width: 100%;
+        height: auto ;
+        padding: 5px 5px;
+
+        @include responsive(tablet-port){
+            max-width: 300px;
+        }
+
+        @include responsive(phone){
+            max-width: 250px;
+        }
+    }
+
+    &__nav-list{
+        @include flexbox(); 
+    }
+
+    &__link{
+        font-size: .83em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-left: .80rem;
+        color: $primaryColor;
+
+        &:hover{
+            color: rgb(20, 173, 193);
+        }
+    }
+
+    &__burger{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") ;
+    }
+}

@@ -1,0 +1,73 @@
+@import "./homeVariables";
+
+#home-content{
+ 
+    .container{
+        background-color: $fifthColor;
+        min-height: 74rem;   
+        margin: 2.5rem auto;
+        
+        @include responsive(tablet-port){
+            margin: 0 auto;
+            min-height: 95rem;
+        }
+
+        &__title{
+            font-family: $titleFont;
+            font-weight: map-get($font-weights, 'regular');
+            font-size: $heading2;
+            color: $fourthColor;
+            letter-spacing: 0.047rem;
+            padding-top: 3rem;
+            position: relative;
+            margin: auto 2.5rem;
+        }
+
+        &__row{
+            margin-top: 3.5rem;
+        }
+
+        &__team{
+            background-color: rgba(115, 106, 106, 0.682);
+            margin: 2rem 2rem;
+            padding: .5rem .5rem;
+
+            @include responsive(phone){
+                margin: 2rem 0rem;
+            }
+        }
+
+        &__team-img{
+            width: 28.125rem;
+            height: 34.375rem;
+
+            @include responsive(tablet-land){
+                width: 100%;
+                height: 25rem;
+            }
+
+            @include responsive(tablet-port){
+                width: 100%;
+                height: 30rem; 
+            }
+
+            @include responsive(phone){
+                width: 100%;
+                height: 26rem; 
+            }
+        }
+
+        &__team-title{
+            color: $fourthColor;
+            font-size: $heading2;
+            font-family: $titleFont;
+            position: relative;
+            text-align: center;
+            margin-top: 1rem; 
+        }
+
+        &__team-sub-title{
+            color: $fourthColor;
+        }
+    }
+}

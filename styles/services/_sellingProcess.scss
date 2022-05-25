@@ -1,0 +1,63 @@
+@import "./variables";
+@import "./global";
+@import "./mixin";
+
+#selling-process{
+    background: linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.404)), url(../img/bckgrnd-img1.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center;
+    min-height: 40.625rem;
+
+    .container{
+        color: $primaryColor;
+        padding: 5.625rem 0rem;
+        
+        &__title-heading-2{
+            font-family: $titleFont;
+            text-align: center;
+            font-size: $heading2;
+            margin-bottom: 2.5rem;
+            width: 100%    
+        }
+
+        &__div-1, &__div-2, &__div-4, &__div-5{
+            border-right: 2px solid #fff;
+            margin-bottom: 1.75rem;
+            
+            @include responsive(phone){
+                border: 0;       
+            }  
+        }
+
+        &__div-3{
+            @include responsive(tablet-port){
+                border-right: 2px solid #fff;
+                margin-bottom: 1.75rem;       
+            }
+            
+            @include responsive(phone){
+                border: 0;       
+            } 
+        }
+
+        &__div-2, &__div-4{       
+            @include responsive(tablet-port){
+                border: 0;       
+            }     
+        }
+        
+        &__heading-2{
+            font-family: $titleFont;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: $heading1;
+            color: $primaryColor;
+        }
+
+        &__heading-4{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: map-get($font-weights ,'large'); 
+        }
+    }  
+}

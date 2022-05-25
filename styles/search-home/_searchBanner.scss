@@ -1,0 +1,26 @@
+@import "./searchVariables";
+@import "./searchGlobal";
+@import "./searchMixin";
+
+#search-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.425),rgba(0, 0, 0, 0.404)),url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/vqd4gxpmjcno2ls1lvte/communities);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    min-height: 35.625rem;
+    
+    .container{
+        @include flexboxCenter();
+        width: 100%;
+        height: 55vh;
+        
+        &__heading{
+            font-family: $titleFont;
+            font-weight: map-get($font-weights, 'regular');
+            font-size: $heading1;
+            color: $primaryColor;
+            letter-spacing: 0.047rem;
+            margin-top: 14rem;    
+        }
+    }
+}

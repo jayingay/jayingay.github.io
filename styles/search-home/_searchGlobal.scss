@@ -1,0 +1,39 @@
+@import "./searchVariables";
+
+//Js Animation
+header.scrolled{
+	background: #191919;
+	transition: .5s ease-in-out;    
+ }
+ 
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	transition: .1s ease-in-out;
+}
+
+html{
+	font-family: $primaryFont;
+	box-sizing: border-box;
+	font-size: 100%;
+
+	@include responsive(tablet-land){
+		font-size: 95%;		
+	}
+
+	@include responsive(tablet-port){
+		font-size: 90%;		
+	}
+
+	@include responsive(phone){
+		font-size: 80%;		
+	}
+
+	@include responsive(desktop){
+		font-size: 105%;		
+	}
+}

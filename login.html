@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar__navbar-brand navbar-brand ml-3" href="homepage.html">
+            <img class="navbar__nav-logo nav-logo" src="https://res.cloudinary.com/luxuryp/images/w_960,c_limit,f_auto,q_auto/tprhoiglqzbp9mbu8x8s/jhsereno-light" alt="logo">
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" aria-expand="false" aria-label="Toggle navigation" data-target="#exnavbar" aria-control="exnavbar">
+            <span class="navbar-toggler-icon navbar__burger"></span>
+        </button>
+        <div class="navbar__collapse collapse navbar-collapse pr-5 ml-4" id="exnavbar">
+            <ul class="navbar__nav-list navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="navbar__link nav-link">Phone: (945) 471-09111</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+    
+    <!-- login start -->
+    <section id="login">
+        <div class="container">
+            <a class="container__back" href="homepage.html"> <span class="container__arrow">⇽</span> Back </a>
+            <form class="container__login">
+                <h1 class="container__login-title">Login</h1>       
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <label class="ml-1" for="exampleInputEmail1">User Name</label>
+                            <input type="text" class="form-control container__input-text" aria-describedby="emailHelp" placeholder="Enter User name" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <label class="ml-1" for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control container__input-text" placeholder="Enter Password" required>
+                        </div>  
+                    </div>
+                    <div class="col-auto my-1 d-flex">
+                        <div class="form-check mr-4 ml-3">
+                          <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                          <label class="form-check-label" for="autoSizingCheck2">Remember me</label>
+                        </div>
+                        <a href="">Forgot Password?</a>
+                    </div>
+                <button type="submit" class="container__login-button">Login</button>
+            </form>
+        </div>
+    </section>
+    <!-- login start -->
+
+    
+    <script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/animate.js"></script>
+</body>
+</html>

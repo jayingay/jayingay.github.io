@@ -1,0 +1,54 @@
+@import "./variables";
+@import "./global";
+@import "./mixin";
+
+#about{
+    
+    .container{
+        background-color: $secondaryColor;
+        padding: 4.375rem 1.25rem;
+        margin-top: 2   .5rem;
+        
+        &__row-image{
+            width: 100%;
+        }
+    
+        &__div-flex-reverse{
+            @include flexboxReverse();    
+        }
+    
+        &__div-content{
+            padding: 3rem 2rem .5rem 2rem;
+
+            @include responsive(tablet-port){
+                padding: 2rem 2rem .5rem 2rem;    
+            }
+        }
+    
+        &__heading-3{
+            font-family: $titleFont;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: $heading3;
+            
+            @include responsive(tablet-port){
+                font-size: 1.5rem;    
+            }
+            
+            @include responsive(phone){
+                font-size: $heading3;    
+            }
+        }
+    
+        &__div-content-2{
+            padding: 3rem 2rem .5rem 2rem;
+            line-height: 1.3rem;
+        }
+
+        &__heading-4{
+            @include responsive(phone){
+                text-align: center;    
+            }    
+        }
+    }
+}

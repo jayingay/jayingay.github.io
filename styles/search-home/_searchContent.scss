@@ -1,0 +1,67 @@
+@import "./searchVariables";
+@import "./searchGlobal";
+
+#search-content{
+    background-color: $secondaryColor;
+
+    .containerr{
+        width: 98%;
+
+        &__outer{
+            height: 450px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        &__inner{
+            height: 450px;
+            background-color: $secondaryColor;
+            overflow-y: scroll;
+            padding: 0rem 5rem;
+            z-index: 0;
+
+            &:after{
+                width: 100%;
+                height: 39rem;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 5;
+                background: $secondaryColor;
+                // background-color:  black;
+            }
+        }
+
+        &__card{
+            z-index: 15;
+            margin: 1rem auto;  
+        }
+
+        &__span{
+            font-size: .67rem; 
+            margin-top: 0.313rem; 
+            margin-left: 0.625rem;
+        }
+
+        &__card-button{
+            letter-spacing: 0.125rem;
+        }
+
+        &__map{
+            width: 660px;
+
+            @include responsive(tablet-land){
+                width: 500px;
+            }
+    
+            @include responsive(tablet-port){
+                display: none;
+            }
+    
+            @include responsive(phone){
+                display: none;
+            }
+        }
+    }
+}

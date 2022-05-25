@@ -1,0 +1,54 @@
+@import "./searchVariables";
+@import "./searchGlobal";
+@import "./searchMediaQueries";
+
+.search{
+    background-color: $primaryColor;
+    width: 100%;
+    min-height: 3.75rem;
+
+    .container{
+        padding: 0;
+        
+        &__search-icon{
+            color: $thirdColor;
+        }
+
+        &__input-search{
+            background: transparent;
+            color: $thirdColor;
+            width: 20vw;
+            border: 0;
+            font-size: 1.1rem;
+            
+            @include responsive(tablet-port){
+                width: 40vw;
+            }
+            
+            @include responsive(phone){
+                width: 50vw;
+            }
+        }
+
+        &__strong{
+            font-weight: map-get($font-weights, 'large');
+            font-family: $titleFont;
+            letter-spacing: .1rem;
+            font-size: $heading4; 
+            color: $secondaryColor;
+            
+            @include responsive(tablet-port){
+                display: none;
+            }
+            
+            @include responsive(phone){
+                display: none;
+            }   
+        }
+
+        &__arrow-right-icon{
+            color: $secondaryColor;
+            font: 1rem; 
+        }
+    }   
+}
